@@ -1,0 +1,23 @@
+13.
+package litvin6;
+
+import java.util.Scanner;
+
+public class Ch6No13 {
+	
+	public static void main(String[] args) {
+		String n;
+		System.out.println("Enter an integer:");
+		Scanner keyboard = new Scanner(System.in);
+		n= keyboard.nextLine();
+		
+		if (n.length()==1){
+			System.out.println(n+"0");
+		}
+		else {
+			System.out.println(n.substring(0,n.length()-2)+n.substring(n.length()-1)+n.substring(n.length()-2,n.length()-1));
+		}
+
+	}
+
+}
