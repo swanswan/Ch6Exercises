@@ -1,0 +1,23 @@
+package litvin6;
+
+import java.util.Scanner;
+
+public class Ch6No14 {
+	
+	int dayofWeek1=0; //January 1 is a Sunday
+	
+	public static int getDayOfWeek(int day) //method
+	{
+		if (day%7==0)
+			return 6; //otherwise -1 is returned		
+		else
+			return day%7-1;
+	}
+
+	public static void main(String[] args) {
+	    System.out.print("Enter day: ");
+	    Scanner kb = new Scanner(System.in);
+	    int day = kb.nextInt();
+	    System.out.println(getDayOfWeek(day));
+	}
+}
