@@ -1,0 +1,2 @@
+int remainingMin = (depHour*60+depMin)- (curHour*60+curMin);
+System.out.println((remainingMin-(remainingMin%60))/60 + "hours and " + remainingMin%60 + "minutes.");
